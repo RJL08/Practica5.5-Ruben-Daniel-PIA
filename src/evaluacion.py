@@ -2,7 +2,8 @@ from typing import Dict
 import numpy as np
 from sklearn.metrics import r2_score, mean_squared_error, mean_absolute_error
 
-
+# EvaluadorModelos es una clase que contiene métodos para evaluar modelos de regresión
+# utilizando métricas como R2, RMSE y MAE.
 class EvaluadorModelos:
     @staticmethod
     def metricas_regresion(y_real: np.ndarray, y_predicho: np.ndarray) -> Dict[str, float]:
@@ -16,8 +17,7 @@ class EvaluadorModelos:
         return self.metricas_regresion(y_prueba, y_pred)
 
     def evaluar_regresion_polinomial(
-        self, modelo, transformador_polinomial, X_prueba: np.ndarray, y_prueba: np.ndarray
-    ) -> Dict[str, float]:
+        self, modelo, transformador_polinomial, X_prueba: np.ndarray, y_prueba: np.ndarray) -> Dict[str, float]:
         X_poly = transformador_polinomial.transform(X_prueba)
         y_pred = modelo.predict(X_poly)
         return self.metricas_regresion(y_prueba, y_pred)

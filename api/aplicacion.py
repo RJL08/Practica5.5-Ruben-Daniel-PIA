@@ -23,7 +23,7 @@ def cargar_modelos():
 
 @app.get("/")
 def inicio():
-    return {"mensaje": "API de predicción de precios", "docs": "/docs"}
+    return {"mensaje": "API para predecir precios", "docs": "/docs"}
 
 
 @app.get("/salud")

@@ -1,7 +1,8 @@
 from pathlib import Path
 import pandas as pd
 
-
+# clase CargadorCSVViviendas con la que se cargan los datos de del csv de viviendas
+# Se le pasa la ruta del csv y devuelve un dataframe con los datos
 class CargadorCSVViviendas:
     def __init__(self, ruta_csv: Path):
         self.ruta_csv = ruta_csv

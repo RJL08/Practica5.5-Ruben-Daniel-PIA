@@ -68,7 +68,7 @@ class PreprocesadorViviendas:
 
     def transformar(self, df: pd.DataFrame, incluir_objetivo: bool = True) -> Tuple[np.ndarray, Optional[np.ndarray]]:
         if not self._entrenado:
-            raise RuntimeError("Preprocesador no entrenado. Llama a entrenar() primero.")
+            raise RuntimeError("Modelo no entrenado. Llama a entrenar() primero.")
 
         df = self._limpieza_basica(df)
         df = self._crear_caracteristicas(df)

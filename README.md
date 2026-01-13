@@ -8,7 +8,7 @@ Proyecto de regresión para predecir el precio de viviendas en California a part
 
 - Python (recomendado 3.10–3.12).
 - Entorno virtual (venv/conda) activado.
-- Dependencias instaladas (FastAPI usa modelos Pydantic para validar el body JSON y genera `/docs` automáticamente). [web:30][web:94]
+- Dependencias instaladas (FastAPI usa modelos Pydantic para validar el JSON y genera `/docs` automáticamente). [web:30][web:94]
 
 ---
 
@@ -27,7 +27,7 @@ california-house-prices/
 
 ## 3) Preparar el dataset
 
-1. Descargar el dataset “California Housing Prices” desde Kaggle. [web:25]
+1. Descarga el dataset “California Housing Prices” desde Kaggle. [web:25]
 2. Copiar el archivo `housing.csv` en la ruta:
    - `data/housing.csv`
 
@@ -57,7 +57,7 @@ python scripts/entrenar_y_evaluar.py
 ```
 
 ## 6) Probar predicción en local (sin API)
-Desde la raíz del proyecto, ejecutar:
+Desde la raíz del proyecto, ejecuta:
 
 ```bash
 python scripts/probar_prediccion.py
@@ -67,7 +67,7 @@ o
 ```bash
 python -m scripts.prueba_rapida_predictor
 ```
-Esto cargará el modelo entrenado y realizará una predicción de prueba.
+Esto carga el modelo entrenado y realizará una predicción de prueba.
 
 ## 7) Desplegar API REST con FastAPI
 Desde la raíz del proyecto, ejecutar:

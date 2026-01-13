@@ -9,7 +9,11 @@ from tensorflow import keras
 
 from src.preprocesamiento import PreprocesadorViviendas
 
-
+# PredictorViviendas es una clase que contiene la lógica para predecir precios de viviendas
+# utilizando modelos de regresión lineal, polinomial y red neuronal.
+# Se inicializa con la carpeta de modelos y carga los modelos y el preprocesador.
+# El método predecir coge un diccionario de datos de entrada, lo convierte en un DataFrame,
+# lo preprocesa y realiza predicciones con los modelos cargados.
 class PredictorViviendas:
     def __init__(self, carpeta_modelos: Path):
         self.carpeta_modelos = carpeta_modelos

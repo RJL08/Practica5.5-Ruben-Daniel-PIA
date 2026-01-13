@@ -6,7 +6,6 @@ from src.preprocesamiento import PreprocesadorViviendas
 from src.entrenamiento import EntrenadorModelos, ModelosEntrenados
 from src.evaluacion import EvaluadorModelos
 
-
 def main():
     config = Configuracion()
     config.carpeta_modelos.mkdir(parents=True, exist_ok=True)
