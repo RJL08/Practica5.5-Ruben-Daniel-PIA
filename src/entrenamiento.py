@@ -49,7 +49,7 @@ class EntrenadorModelos:
     # se utiliza modelo.fit para entrenar el modelo con los datos
     # se utilizan los parámetros epocas, tamano_lote y semilla para controlar el entrenamiento
     # se devuelve el modelo entrenado
-    # se utiliza keras.Model para definir el tipo de retorno del método
+    # se utiliza keras.Model para definir el tipo de retorno del metodo
     # se utiliza np.ndarray para definir el tipo de los parámetros de entrada
     # se utiliza int para definir el tipo de los parámetros epocas y tamano_lote
     def entrenar_red_neuronal(
